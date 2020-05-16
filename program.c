@@ -2,9 +2,13 @@ int sum(int a,int b)
 {
     return a+b;
 }
-int subtract(int a,int b)
+int subtract(int x,int y)
 {
-	return a-b;
+	return x-y;
+}
+int multiply_something(int f,int r)
+{
+	return f * r;
 }
 
 
