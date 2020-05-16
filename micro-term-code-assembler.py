@@ -1,4 +1,5 @@
 list_function_name=[]
+# this function gives the name of defined all int functions
 def function_detector(text):
     a = text.find("int")
     b = text.find("(")
@@ -13,11 +14,14 @@ def function_detector(text):
         del list1[index1:length]
         #print(list1)
         new_String = "".join(map(str,list1))
-        print(new_String)
-        list_function_name = list(new_String.split("\n"))
-        print(list_function_name)
+        #print(new_String)
+        list_new = list(new_String.split("\n"))
+        list_function_name.append(new_String)
+        #print(list_function_name)
+
 
 
 c_file = open("program.c","r")
 for x in c_file:
-     function_detector(x)
+    function_detector(x)
+print(list_function_name)
