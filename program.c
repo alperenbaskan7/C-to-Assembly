@@ -1,28 +1,43 @@
-int sum(int a,int b) 
+int sum1(int sum1 , int sum2) 
 {
-    return a  +  b;
+    return sum1  +  sum2; 
 }
-int subtract(int x,int y)
-{
-	return x-y;
+int sum2(int sum3,int sum4){
+	
+	return sum3 + sum4 ;
 }
-int multiply_something(int f,int r)
+
+
+int subtract(int value1,int value2)
 {
-	return f * r;
+	return value1 - value2;
+}
+int multiply_something(int mult1,int mult2)
+{
+	return mult1 * mult2;
 }
 
 
 int main(){
-	int a,b;
-	if (a-b){
+	int a=8,b=3;
+	if (a-b==5){
 		a = 3;
 	}
-	for (a=0;a=3;a--){
+	else{
+		a=7;
+	}
+	
+	
+	for (a=0;a=3;a++){
 		b = 7;
 	}
-    int m;
+    int m,n,o,p;
    
-    
-    
     m= sum(10,20);
+    n = subtract(5,3);
+    o = multiply_something(4,6);
+    p = sum2(2,1);
 }
+
+
+
