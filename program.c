@@ -4,6 +4,12 @@ int sum1(int sum1 , int sum2) {
 int sum2(int sum3,int sum4){	
 	return sum3 + sum4 ;}
 
+
+ 		
+ 		
+
+
+
 int subtract(int value1,int value2){
 	return value1 - value2;}
 	
