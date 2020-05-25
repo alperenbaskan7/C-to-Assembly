@@ -6,6 +6,7 @@ int sum2(int sum3,int sum4){
 
 int subtract(int value1,int value2){
 	return value1 - value2;}
+	
 int multiply_something(int mult1,int mult2){
 	return mult1 * mult2;}
 
@@ -15,6 +16,7 @@ int main(){
 	
 	if(a-b==1){
 		a = 3;}
+		
 	else{
 		a = 7;}
 	
