@@ -10,7 +10,7 @@ MSP430 gcc 6.2.1
 '''
 list_for_loop = []
 else_list = []
-print("Please enter the name of your C program with extension (program.c):")
+print("Please enter the name of your C program with extension (YourProgram.c):")
 my_c_program = input()
 c_file = open(my_c_program, "r")
 asm_file = open("assembly-converted.asm","w")
@@ -118,10 +118,12 @@ def main():
 main()
 c_file.close()
 asm_file.close()
-asm_file = open("assembly-converted.asm","r")
+asm_file = open("assembly-converted.asm", "r")
 x = asm_file.read()
 asm_file.close()
-asm2_file = open("assembly-converted.txt","w")
+asm2_file = open("assembly-converted.txt", "w")
 asm2_file.write(x)
-print("Please check the file that you put C file to see your converted (assembly.asm) file")
-k=input("Press Enter to Exit")
+asm2_file.close()
+print("Please check the file that you put C file to see your converted (assembly-converted.asm) file\nAlso You can find the file assembly-converted.txt to see the text in the assembly program")
+print("\nYou can first try with the existing file (program.c) ")
+k = input("Press Enter to Exit")
