@@ -18,7 +18,7 @@ int multiply_something(int mult1,int mult2){
 
 int main(){
 	int a=1,b=0,d;
-	d = a ^ b;	
+	d = a || b;	
 	
 	if(a-b==1){
 		a = 3;}
@@ -28,8 +28,8 @@ int main(){
 	
 	for (a=0;a=3;a++){
 		b = 7;}
-    int m,n,o,p;
-   
+    int m,n,o,p,q;
+   	q = a && b;
     m= sum(10,20);
     n = subtract(5,3);
     o = multiply_something(4,6);
